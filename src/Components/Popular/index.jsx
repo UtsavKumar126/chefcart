@@ -31,6 +31,7 @@ function Popular() {
                   width: "150px",
                   height: "150px",
                   borderRadius: "50%",
+                  opacity:"0.8"
                 }}
               >
                 {dish.name}
