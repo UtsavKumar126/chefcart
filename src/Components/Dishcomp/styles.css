@@ -1,0 +1,179 @@
+
+.dish-element{
+    display: flex;
+    gap: 1rem;  
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 2.5rem;
+    border-bottom: 2px solid #D6D6D6CE;
+}
+.dish-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.dish-name{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+.name-rating{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:0.8rem;
+}
+.name{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.veg-img{
+    width:1.5rem
+}
+.rating{
+    font-size: 0.8rem;
+    padding: 0.2rem 0.6rem;
+    background-color: var(--vegetarian-color);
+    color: white;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.2rem;
+    border-radius: 0.3rem;
+    margin-left: 1rem;
+}
+.dish-image{
+    width: 100%;
+}
+.image-box{
+    width:50%;
+    overflow: hidden;
+    max-height: 150px;
+    border-radius: 1rem;
+}
+.add-button{
+    position: absolute;
+    top:8rem;
+    left: 16.5rem;
+    padding: 0.5rem 2rem;
+    box-shadow: 0px 3px 4px #00000029;
+    border: 2px solid #FF9A26;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    color: #FF8800;
+}
+.refri-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
+    color: #1C1C1C;
+}
+.eqip{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:1rem;
+    padding: 1rem 1.5rem;
+    border-right: 2px solid #D6D6D6CE;
+   
+}
+.button-recipe{
+    display: flex;
+}
+.ingri-center{
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+.ingri-center p:first-child{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.ingri-center p:last-child{
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--popular-outline);
+}
+.dish-desc{
+    color: #707070;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:768px) {
+    .dish-element{
+        width: 95%;
+        gap: 0.5rem;
+        padding: 0rem;
+    }
+    .add-button{
+        left: 1rem;
+        top: 3.5rem;
+        padding: 0.2rem 0.8rem;
+        font-size: 0.6rem;
+    }
+    .dish-main{
+        gap:1rem;
+        margin-top: 1rem;
+    }
+    .dish-name{
+        gap:0.5rem;
+    }
+    .name-rating{
+        gap:0.4rem;
+    }
+    .name{
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+    .rating{
+        font-size: 0.6rem;
+        padding: 0.1rem 0.4rem;
+        gap:0.1rem;
+        margin-left: 0.5rem;
+    }
+    .refri-img{
+        gap: 0.2rem;
+    }
+    .ref{
+        width: 0.5rem;
+    }
+    .eqip{
+        gap:0.5rem;
+        padding: 0.5rem 0.5rem;
+    }
+    .ingri-center{
+        padding: 0.5rem 0.5rem;
+    }
+    .ingri-center p:first-child{
+        font-size: 0.6rem;
+    }
+    .ingri-center p:last-child{
+        font-size: 0.5rem;
+    }
+    .dish-desc{
+        font-size: 0.65rem;
+        padding-bottom:0.5rem ;
+    }
+    .refri-img p{
+        font-size: 0.6rem;
+    }
+    .veg-img{
+        width: 1rem;
+    }
+    .image-box{
+        width: 75px;
+        height: 70px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    
+}

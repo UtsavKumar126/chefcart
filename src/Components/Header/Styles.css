@@ -1,0 +1,28 @@
+.header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    gap: 2rem;
+}
+.header>img{
+    width: 0.7rem;
+}
+.header>p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 767px) {
+    .header{
+        padding: 0.7rem 1rem;
+        gap: 1rem;
+    }
+    .header>img{
+        width: 0.5rem;
+    }
+    .header>p{
+        font-size: 1rem;
+    }
+    
+}
