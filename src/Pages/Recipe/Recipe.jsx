@@ -8,8 +8,10 @@ import clock from "../../assets/clock.jpg";
 import arrowDown from "../../assets/Path 786@2x.jpg";
 import refri from "../../assets/refriimg.jpg"
 import "./styles.css"
+import { useNavigate } from "react-router-dom";
 function Recipe() {
   const [data2, setData2] = useState({});
+  const naviagte=useNavigate();
   console.log(data2);
   useEffect(() => {
     async function getData() {
@@ -23,7 +25,7 @@ function Recipe() {
   }, []);
   return (
     <>
-      <div className="header-recipe">
+      <div className="header-recipe" onClick={()=>naviagte('/')}>
         <ArrowBackIosRoundedIcon fontSize="medium" />
       </div>
       <div className="image-container">
